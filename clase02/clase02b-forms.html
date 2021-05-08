@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <form action=""></form>
-</body>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Datos de usuario</legend>
+        <label for="nombre">Ingresa tu nombre:</label><input type="text" />
+        <br />
+        <label for="nombre">Ingresa tu contraseña:</label
+        ><input type="password" /> <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos personales</legend>
+        <!-- RADIO BUTTONS-->
+        <label for="sexo">Seleccione sexo:</label>
+        F <input type="radio" name="sexoUsuario" /> M
+        <input type="radio" name="sexoUsuario" />
+
+        <br />
+        <!-- SELECT -->
+        <label for="talle">Talle:</label>
+        <select name="" id="">
+          <option value="">S</option>
+          <option value="">M</option>
+          <option value="">L</option>
+        </select>
+      </fieldset>
+
+      <br />
+      <!-- CHECKBOX -->
+      <input type="checkbox" /> Aceptar TyC
+
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+      <input type="button" value="Boton" />
+    </form>
+  </body>
 </html>
