@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Nuestros productos</a></li>
+          <li><a href="propiedades.html">Propiedades de la pecán</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contacto</h1>
+      <form action="mailto:virginiabauk@gmail.com" method="POST">
+        <fieldset>
+          <legend>Tus datos</legend>
+          <label for="nombre">Tu nombre:</label>
+          <input type="text" />
+          <br />
+
+          <label for="mail">Tu e-mail:</label>
+          <input type="email" />
+          <br />
+
+          <label for="zona">¿Dónde resides?: </label>
+          <select>
+            <option value="ar">Argentina</option>
+            <option value="bo">Bolivia</option>
+            <option value="ch">Chile</option>
+            <option value="co">Colombia</option>
+            <option value="pe">Perú</option>
+            <option value="uy">Uruguay</option>
+          </select>
+          <br />
+        </fieldset>
+        <fieldset>
+          <legend>Tu mensaje</legend>
+          <label for="nombre">Escribe aquí tu sugerencia o consulta:</label>
+          <br /><textarea
+            name="consulta"
+            id="consulta"
+            cols="60"
+            rows="10"
+          ></textarea>
+          <br />
+
+          <label for="consumidor-habitual"
+            >¿Sos consumidor habitual de nuestros productos?</label
+          >
+          <span>Sí</span><input type="radio" name="consumidor" /> <span>No</span
+          ><input type="radio" name="consumidor" />
+
+          <br />
+          <input type="checkbox" />
+          <label for="promociones"
+            >¿Deseas recibir promociones en tu casilla de e-mail?</label
+          >
+          <br />
+        </fieldset>
+
+        <br />
+        <input type="reset" name="Limpiar formulario" class="button" />
+        <input type="submit" class="button" />
+      </form>
+    </main>
+
+    <footer>
+      <br /><br /><span>(c) 2021 - Todos los derechos reservados</span>
+    </footer>
+  </body>
+</html>
