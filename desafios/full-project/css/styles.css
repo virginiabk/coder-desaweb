@@ -1,0 +1,130 @@
+/* https://colorhunt.co/palette/265091
+#865858
+#8e7f7f
+#bbbbbb
+#e2d5d5
+*/
+
+/*******************  STYLES *******************/
+a {
+  color: black;
+}
+
+a:hover {
+  color: #865858;
+}
+
+article {
+  border: 1px solid #865858;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+body {
+  background-color: #e2d5d5;
+  background-image: url("../img/pecan-bbbbbb.svg");
+  background-position-x: right;
+  background-repeat: repeat-y;  
+  background-size: 5%;
+  font-family: 'Baloo 2', sans-serif;
+  padding: 5px;;
+}
+
+fieldset {
+    width: 600px;
+}
+
+footer {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+h1 {
+  color: #865858;
+  text-align: center;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+  
+  border: 1px solid #bbbbbb;
+}
+
+section {
+  text-align: center;
+}
+
+select {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #bbbbbb;
+}
+
+table {
+  text-align: center;
+}
+
+td {
+  background: #bbbbbb;
+  padding: 5px;
+}
+
+textarea {
+  border: 1px solid #bbbbbb;
+}
+
+th {
+  background: #8e7f7f;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/******************* CLASS STYLES *******************/
+.button {
+  background-color: #865858;
+  color: #e2d5d5;
+  padding: 10px;
+}
+
+.button:hover {
+    color:#bbbbbb;
+}
+.price {
+  margin: 1px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #bbbbbb;
+  font-weight: bolder;
+  color: #865858;
+}
+
+.product {
+  border: solid 1px #865858;
+  border-radius: 100%;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 120%;
+  font-variant-caps: all-petite-caps;
+  min-height: 90px;
+  max-height: 90px;
+}
+
+/******************* ELEMENT STYLES *******************/
+#banner {
+  border-radius: 25px;
+  width: 100%;
+}
