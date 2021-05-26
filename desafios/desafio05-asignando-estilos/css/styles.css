@@ -23,9 +23,14 @@ article {
   text-align: center;
   width: 200px;
 }
+
 body {
   background-color: #e2d5d5;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("../img/pecan-bbbbbb.svg");
+  background-position-x: right;
+  background-repeat: repeat-y;  
+  background-size: 5%;
+  font-family: 'Baloo 2', sans-serif;
   padding: 5px;;
 }
 
@@ -49,6 +54,14 @@ h1 {
 
 input {
   margin: 5px;
+  padding: 5px;
+  
+  border: 1px solid #bbbbbb;
+}
+
+select {
+  margin: 5px;
+  padding: 5px;
   border: 1px solid #bbbbbb;
 }
 
@@ -68,6 +81,10 @@ textarea {
 th {
   background: #8e7f7f;
   padding: 10px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /******************* CLASS STYLES *******************/
@@ -96,7 +113,7 @@ th {
 
 .product-name {
   font-weight: 600;
-  font-size: 90%;
+  font-size: 120%;
   font-variant-caps: all-petite-caps;
   min-height: 90px;
   max-height: 90px;
