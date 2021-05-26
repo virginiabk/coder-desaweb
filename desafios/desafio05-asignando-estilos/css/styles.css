@@ -59,6 +59,10 @@ input {
   border: 1px solid #bbbbbb;
 }
 
+section {
+  text-align: center;
+}
+
 select {
   margin: 5px;
   padding: 5px;
