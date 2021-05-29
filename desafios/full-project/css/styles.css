@@ -54,6 +54,9 @@ h1 {
   color: #865858;
   text-align: center;
 }
+h3 {
+  color: #865858;
+}
 
 input {
   margin: 5px;
@@ -75,14 +78,13 @@ ul {
 ul li a:hover {  
   background-color: #865858;
   color: #bbbbbb;
-  padding: 4px;
+  padding: 0px 20px;
 }
 
 
 
 
 section {
-  border: 1px solid black;
   text-align: center;
 }
 
