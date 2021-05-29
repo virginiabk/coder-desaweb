@@ -64,24 +64,23 @@ input {
   border: 1px solid #bbbbbb;
 }
 
-li {  
+nav ul li {  
   padding-left: 15px;
   display: inline-block;
   width: 15%;
   position:relative;  
 }
 
-ul {
+nav ul {
   text-align: center;
+  list-style-type: none;
 }
 
-ul li a:hover {  
+nav ul li a:hover {  
   background-color: #865858;
   color: #bbbbbb;
   padding: 0px 20px;
 }
-
-
 
 
 section {
@@ -95,7 +94,7 @@ select {
 }
 
 table {
-  text-align: center;
+  text-align: left;
 }
 
 td {
@@ -112,9 +111,7 @@ th {
   padding: 10px;
 }
 
-ul {
-  list-style-type: none;
-}
+
 
 /******************* CLASS STYLES *******************/
 .button {
