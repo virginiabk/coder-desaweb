@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color: black;
+            font-size: xx-large;
+        }
+
+        #cajaGrid {
+            display: grid;
+            grid-template-columns: 20% 30% 50%;
+            grid-template-rows: 300px 300px;
+            grid-template-areas: "caja1 caja2 caja3"
+                " caja1 caja2 caja4";
+
+            row-gap: 50px;
+            column-gap: 50px;
+            justify-items: flex-center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #cajaUno {
+            background-color: mediumpurple;
+            width: 100px;
+            grid-area: caja4;
+            justify-self: center;
+            align-self: flex-center;
+            text-align: right;
+        }
+
+        #cajaDos {
+            background-color: skyblue;
+            width: 100%;
+            grid-area: caja2;
+        }
+
+        #cajaTres {
+            background-color: salmon;
+            width: 100%;
+            grid-area: caja3;
+        }
+
+        #cajaCuatro {
+            background-color: tan;
+            width: 100%;
+            grid-area: caja1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cajaGrid">
+        <div id="cajaUno">1</div>
+        <div id="cajaDos">2</div>
+        <div id="cajaTres">3</div>
+        <div id="cajaCuatro">4</div>
+    </div>
+</body>
+
+</html>

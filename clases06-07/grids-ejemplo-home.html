@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            background-color: tomato;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 200px 200px 200px 200px;
+            grid-template-areas: "nav header header"
+                "nav section1 aside"
+                "nav section2 aside"
+                "nav footer footer";
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        header {
+            background-color: cadetblue;
+            grid-area: header;
+        }
+
+        nav {
+            background-color: cadetblue;
+            grid-area: nav;
+        }
+
+        #section-1 {
+            background-color: cadetblue;
+            grid-area: section1;
+        }
+
+        #section-2 {
+            background-color: cadetblue;
+            grid-area: section2
+        }
+
+        aside {
+            background-color: cadetblue;
+            grid-area: aside;
+        }
+
+        footer {
+            background-color: cadetblue;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <section id="section-1">Section1</section>
+        <section id="section-2">Section2</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+    
+</body>
+
+</html>
