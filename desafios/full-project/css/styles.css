@@ -11,7 +11,7 @@ a {
   color: black;
   text-decoration: none;
   padding: 4px;
- }
+}
 
 a:hover {
   color: #865858;
@@ -31,39 +31,58 @@ body {
   background-color: #e2d5d5;
   background-image: url("../img/pecan-bbbbbb.svg");
   background-position-x: right;
-  background-repeat: repeat-y;  
+  background-repeat: repeat-y;
   background-size: 5%;
   font-family: 'Baloo 2', sans-serif;
-  padding: 5px;;
+  padding: 5%;
 }
 
 fieldset {
-    width: 600px;
+  width: 600px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    display: grid;
-    justify-content: center;
-    margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
 }
+
 h1 {
   color: #865858;
   text-align: center;
 }
+
 h3 {
   color: #865858;
 }
 
 input {
   margin: 5px;
-  padding: 5px;  
+  padding: 5px;
   border: 1px solid #bbbbbb;
 }
 
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  
+}
+
+nav li {
+  flex: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+/*
 nav ul li {  
   padding-left: 15px;
   display: inline-block;
@@ -75,16 +94,25 @@ nav ul {
   text-align: center;
   list-style-type: none;
 }
-
-nav ul li a:hover {  
-  background-color: #865858;
-  color: #bbbbbb;
-  padding: 0px 20px;
+*/
+nav ul li a:hover {
+ // background-color: #865858;
+ // color: #bbbbbb;
+  // padding: 0px 20px;
 }
 
+nav ul li:hover {
+  background-color: #8e7f7f;
+  color: #bbbbbb;
+}
 
 section {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:left;
+  
 }
 
 select {
@@ -121,8 +149,9 @@ th {
 }
 
 .button:hover {
-    color:#bbbbbb;
+  color: #bbbbbb;
 }
+
 .price {
   margin: 1px;
   border-radius: 5px;
@@ -146,7 +175,23 @@ th {
 }
 
 /******************* ELEMENT STYLES *******************/
+
+
+
 #banner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#campos-pecan {
+  font-family: 'Lobster', cursive;
+  font-size: xxx-large;
+  padding: 10px;
+}
+
+#banner-image {
   border-radius: 25px;
-  width: 100%;
+ max-width: 80%;
+ min-width: 10%;
 }
