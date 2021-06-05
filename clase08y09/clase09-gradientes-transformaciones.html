@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase09-Gradientes y transformaciones</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div {
+            margin: 10px; 
+            
+        }
+
+        .transicionSuave {
+            transition: 500ms;
+        }
+
+        #gradiente {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to right, palevioletred, paleturquoise);
+        }
+
+        #gradiente:hover {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to left, palevioletred, paleturquoise);
+        }
+
+        #translate {
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+        }
+
+        #translate:hover {
+            transform: translate(10px, 20px);
+        }
+
+        #rotate {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+        }
+
+        #rotate:hover {
+            transform: rotate(15deg);
+        }
+
+        #rotateX {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+
+        #rotateX:hover {
+            transform: rotateX(45deg);
+        }
+
+        #scale {
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+        }
+        #scale:hover {
+            transform: scale(1.2, 0.5);
+        }
+
+        #skew {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+        }
+        #skew:hover {
+            transform: skew(5deg, 5deg);
+        }
+
+        #transition {
+            height: 100px; width: 100px;
+            transition: all 500ms;
+            background-color: orange;
+            
+        }
+        #transition:hover {
+            height: 100px; width: 200px;
+            transition: width 200ms;             
+        }
+
+        input:focus {
+            background-color: palevioletred;
+            transition: all 500ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gradiente" class="transicionSuave">gradient</div>
+    <div id="translate" class="transicionSuave">translate</div>
+    <div id="rotate" class="transicionSuave">rotate</div>
+    <div id="rotateX" class="transicionSuave">rotateX</div>
+    <div id="scale" class="transicionSuave">scale</div>
+    <div id="skew" class="transicionSuave">skew</div>
+
+    <div id="transition">transition</div>
+    <input type="text">
+</body>
+
+</html>
