@@ -28,7 +28,7 @@ article {
 }
 
 
-aside {
+#aside {
   display: grid;
   grid-area: aside;
   align-content: flex-start;
@@ -51,7 +51,7 @@ fieldset {
   width: 600px;
 }
 
-footer {
+#footer {
   display: grid;
   grid-area: footer;
   text-align: center;
@@ -79,7 +79,7 @@ input {
   border: 1px solid #bbbbbb;
 }
 
-main {
+#main {
   display: grid;
   grid-area: main;
 }
@@ -176,7 +176,7 @@ th {
 
 #banner-image {
   border-radius: 25px;
-  text-align: center;
+ // text-align: center;
 }
 
 #campos-pecan {
