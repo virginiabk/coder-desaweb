@@ -27,15 +27,11 @@ article {
   width: 200px;
 }
 
-
-#aside {
-  //display: grid;
+aside {
   grid-area: aside;
-  align-content: flex-start;
+  align-content: space-around;
   justify-content: center;
 }
-
-
 
 body {
   background-color: #e2d5d5;
@@ -45,14 +41,14 @@ body {
   background-size: 5%;
   font-family: 'Baloo 2', sans-serif;
   padding-bottom: 5%;
+  padding: 15px 15px 50px 15px;
 }
 
 fieldset {
   width: 600px;
 }
 
-#footer {
- // display: grid;
+footer {
   grid-area: footer;
   text-align: center;
 }
@@ -79,22 +75,20 @@ input {
   border: 1px solid #bbbbbb;
 }
 
-#main {
-  //display: grid;
+main {
   grid-area: main;
+}
+
+nav li {
+  text-align: center;
+  padding: 10px;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-
-}
-
-
-nav li {
-  text-align: center;
-  padding: 10px;
+  justify-content: space-evenly;  
 }
 
 nav ul li:hover {
@@ -171,40 +165,39 @@ th {
 }
 
 /******************* ELEMENT STYLES *******************/
-
-
+#banner {
+  grid-area: banner;
+  justify-content: center;
+}
 
 #banner-image {
   border-radius: 25px;
- // text-align: center;
 }
 
 #campos-pecan {
   font-family: 'Lobster', cursive;
   font-size: xxx-large;
-  padding: 0px;
+  align-self: center;
 }
 
 #grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-areas: "banner banner" "menu menu"
-                       "aside main"
-                       "footer footer";
+  grid-template-areas:  "banner banner"
+                        "menu menu"
+                        "aside main"
+                        "footer footer";
   row-gap: 10px;
   column-gap: 10px;
-}
-
-#banner {
-  grid-area: banner;
-  justify-content: center;
 }
 
 #menu {
   grid-area: menu;
   height: 100px;
   justify-content: space-evenly;
-  align-items: center;
 }
 
-
+#logo {
+  display: flex;
+  justify-content: space-between;
+}
