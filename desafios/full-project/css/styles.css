@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #865858;
+  color: #bbbbbb;
 }
 
 article {
@@ -27,14 +27,24 @@ article {
   width: 200px;
 }
 
+
+aside {
+  display: grid;
+  grid-area: aside;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+
+
 body {
   background-color: #e2d5d5;
   background-image: url("../img/pecan-bbbbbb.svg");
-  background-position-x: right;
-  background-repeat: repeat-y;
+  background-position-y: bottom;
+  background-repeat: repeat-x;
   background-size: 5%;
   font-family: 'Baloo 2', sans-serif;
-  padding: 5%;
+  padding-bottom: 5%;
 }
 
 fieldset {
@@ -42,8 +52,11 @@ fieldset {
 }
 
 footer {
+  display: grid;
+  grid-area: footer;
   text-align: center;
 }
+
 
 form {
   display: grid;
@@ -66,39 +79,22 @@ input {
   border: 1px solid #bbbbbb;
 }
 
+main {
+  display: grid;
+  grid-area: main;
+}
 
 nav ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   list-style-type: none;
-  
+
 }
+
 
 nav li {
-  flex: auto;
   text-align: center;
   padding: 10px;
-}
-
-/*
-nav ul li {  
-  padding-left: 15px;
-  display: inline-block;
-  width: 15%;
-  position:relative;  
-}
-
-nav ul {
-  text-align: center;
-  list-style-type: none;
-}
-*/
-nav ul li a:hover {
- // background-color: #865858;
- // color: #bbbbbb;
-  // padding: 0px 20px;
 }
 
 nav ul li:hover {
@@ -111,8 +107,8 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:left;
-  
+  justify-content: left;
+
 }
 
 select {
@@ -178,20 +174,39 @@ th {
 
 
 
-#banner {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
+#banner-image {
+  border-radius: 25px;
+  text-align: center;
 }
 
 #campos-pecan {
   font-family: 'Lobster', cursive;
   font-size: xxx-large;
-  padding: 10px;
+  padding: 0px;
 }
 
-#banner-image {
-  border-radius: 25px;
- max-width: 80%;
- min-width: 10%;
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "banner banner" "menu menu"
+                       "aside main"
+                       "footer footer";
+  row-gap: 10px;
+  column-gap: 10px;
 }
+
+#banner {
+  display: grid;
+  grid-area: banner;
+  justify-content: center;
+}
+
+#menu {
+  display: grid;
+  grid-area: menu;
+  height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+

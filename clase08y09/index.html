@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #grilla {
+            display: grid;
+            grid-template-columns: 25% 25% 50%;
+            grid-template-rows: 200px 400px;
+            grid-template-areas: "header header header"
+                "foto1 foto1 foto2";
+        }
+
+        #caja1 {
+            grid-area: header;
+            background-color: peru;
+        }
+
+        #caja2 {
+            grid-area: foto1;
+            background-color: plum;
+        }
+
+        #caja3 {
+            grid-area: foto2;
+            background-color: salmon;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #grilla {
+                grid-template-columns: 100%;
+                grid-template-rows: 200px 200px 200px;
+                grid-template-areas: "header"
+                    "foto1"
+                    "foto2";
+            }
+
+            #caja1 {
+                grid-area: header;
+                background-color: springgreen;
+            }
+
+            #caja2 {
+                grid-area: foto1;
+                background-color: teal;
+            }
+
+            #caja3 {
+                grid-area: foto2;
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grilla">
+        <div id="caja1">1</div>
+        <div id="caja2">2</div>
+        <div id="caja3">3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #cajaflex {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(212, 166, 166);
+            height: 800px;
+        }
+
+        #hijo1 {
+            background-color: blue;
+            height: 200px;
+            width: 100%;
+        }
+
+        #hijo2 {
+            background-color: rgb(73, 175, 136);
+            height: 200px;
+            width: 100%;
+        }
+
+        #hijo3 {
+            background-color: rgb(190, 89, 120);
+            height: 200px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #cajaflex {
+                display: flex;
+                flex-direction: column;
+                background-color: peachpuff;
+            }
+
+            #hijo1 {
+                background-color:  cadetblue;
+                height: 200px;
+                width: 100%;
+            }
+
+            #hijo2 {
+                background-color: salmon;
+                height: 200px;
+                width: 100%;
+            }
+
+            #hijo3 {
+                background-color: sandybrown;
+                height: 200px;
+                width: 100%;
+            }
+
+            /* TElÉFONOS LANDSCAPE + TABLET Vertical min-width: 600px */
+            /* TABLET LAND + UP min-width: 768px */
+            /* NOTEBOOK LAPTOP ESCRITORIO min-width: 992px */
+            /* NOEBOOOK min-width: 1200px */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cajaflex">
+        <div id="hijo1"></div>
+        <div id="hijo2"></div>
+        <div id="hijo3"></div>
+    </div>
+
+</body>
+
+</html>
