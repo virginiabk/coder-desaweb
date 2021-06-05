@@ -29,7 +29,7 @@ article {
 
 
 #aside {
-  display: grid;
+  //display: grid;
   grid-area: aside;
   align-content: flex-start;
   justify-content: center;
@@ -52,7 +52,7 @@ fieldset {
 }
 
 #footer {
-  display: grid;
+ // display: grid;
   grid-area: footer;
   text-align: center;
 }
@@ -80,7 +80,7 @@ input {
 }
 
 #main {
-  display: grid;
+  //display: grid;
   grid-area: main;
 }
 
@@ -196,13 +196,11 @@ th {
 }
 
 #banner {
-  display: grid;
   grid-area: banner;
   justify-content: center;
 }
 
 #menu {
-  display: grid;
   grid-area: menu;
   height: 100px;
   justify-content: space-evenly;
