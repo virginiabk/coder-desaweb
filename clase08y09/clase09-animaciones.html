@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase09 - Animations</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        #caja {
+            width: 200px;
+            height: 200px;
+            background-color: palevioletred;
+            animation: colores 4000ms;
+            animation-iteration-count: infinite;
+        }
+
+        
+        h1 {
+            animation-direction: 1s;
+            animation: aparecerTexto 1s;
+        }
+        @keyframes colores {
+            0% {
+                background-color: pink;
+            }
+
+            25% {
+                background-color: plum;
+                transform: rotate(45deg);
+            }
+
+            50% {
+                background-color: violet;
+                transform: rotate(90deg);
+            }
+            75% {
+                background-color: slateblue;
+                transform: rotate(135deg);
+            }
+        }
+
+        @keyframes aparecerTexto {
+            from{
+                background-color: slateblue;
+            }
+
+            to {
+                background-color: tan;
+            }
+        }
+
+        p {
+            animation: bounceInDown 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <div id="caja"></div>
+    <p class="animate__animated">Ejemplo Animated css - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure numquam deserunt ex, rem tenetur enim adipisci, esse laboriosam veniam inventore provident dolores sit dicta! Recusandae sit iusto similique repellendus atque.</p>
+    
+</body>
+
+</html>
