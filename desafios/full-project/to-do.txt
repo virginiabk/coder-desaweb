@@ -1,0 +1,2 @@
+1. quitar BRs
+2. hacer el header linkeable a la home
