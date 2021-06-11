@@ -1,2 +1,2 @@
-1. quitar BRs
-2. hacer el header linkeable a la home
+1. quitar BRs DONE --> TO-DO: revisar form de contacto en chrome
+2. hacer el header linkeable a la home DONE --> TO-DO revisar en el index

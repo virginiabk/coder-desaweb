@@ -1,0 +1,39 @@
+/******************* RECETAS *******************/
+
+#detalle-receta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nombre         nombre          nombre"
+      "fuente         fuente          fuente"
+      "image          tiempo          porciones"
+      "ingredientes   preparacion     preparacion"
+  
+  }
+  
+  #receta-nombre {
+    grid-area: nombre;
+  }
+  
+  #receta-label-fuente {
+    grid-area: fuente;
+  }
+  
+  #receta-imagen {
+    grid-area: image;
+  }
+  
+  #receta-label-tiempo {
+    grid-area: tiempo;
+  }
+  
+  #receta-label-porciones {
+    grid-area: porciones;
+  }
+  
+  #receta-ingredientes {
+    grid-area: ingredientes;
+  }
+  
+  #receta-preparacion {
+    grid-area: preparacion;
+  }
