@@ -12,7 +12,7 @@
 
 
   <style>
-  
+   
   </style>
 
 </head>
@@ -20,14 +20,14 @@
 <body>
   <div id="grid-content">
 
-    <a href="../full-project/index.html">
-      <header id="banner">
-        <div id="logo">
-          <img id="banner-image" src="img/pecan-pie.png" alt="Logo" />
-          <h1 id="campos-pecan">Campos de Pecán</h1>
-        </div>
-      </header>
-    </a>
+    <a href="../full-project/index.html" class="go-home">
+    <header id="banner">
+      <div id="logo">
+        <img id="banner-image" src="img/pecan-pie.png" alt="Logo" />
+        <h1 id="campos-pecan">Campos de Pecán</h1>
+      </div>
+    </header>
+    
 
     <nav id="menu">
       <ul>
@@ -42,57 +42,51 @@
     <main>
       <h1>Contacto</h1>
       <form action="mailto:virginiabauk@gmail.com" method="POST">
-        <fieldset id="contact-form-datos">
+        <!-- Datos del contacto-->
+        <fieldset>
           <legend>Tus datos</legend>
-          <label for="nombre" id="label-nombre">Tu nombre:</label>
-          <input type="text" id="input-nombre" />
+          <div id="contact-form-datos">
+            <label for="nombre" id="label-nombre">Tu nombre:</label>
+            <input type="text" id="input-nombre" />
+
+            <label for="mail" id="label-email">Tu e-mail:</label>
+            <input type="email" id="input-email" />
+
+            <label for="zona" id="label-residencia">¿Dónde resides?: </label>
+            <select id="input-residencia">
+              <option value="ar">Argentina</option>
+              <option value="bo">Bolivia</option>
+              <option value="ch">Chile</option>
+              <option value="co">Colombia</option>
+              <option value="pe">Perú</option>
+              <option value="uy">Uruguay</option>
+            </select>
+
+            <label for="consumidor-habitual" id="label-consumidor-habitual">¿Sos consumidor habitual de nuestros
+              productos?</label>
+            <div id="input-consumidor-habitual">
+              <span>Sí</span><input type="radio" name="consumidor" /> <span>No</span><input type="radio"
+                name="consumidor" />
+            </div>
 
 
-          <label for="mail" id="label-email">Tu e-mail:</label>
-          <input type="email" id="input-email" />
-
-
-          <label for="zona" id="label-residencia">¿Dónde resides?: </label>
-          <select id="input-residencia">
-            <option value="ar">Argentina</option>
-            <option value="bo">Bolivia</option>
-            <option value="ch">Chile</option>
-            <option value="co">Colombia</option>
-            <option value="pe">Perú</option>
-            <option value="uy">Uruguay</option>
-          </select>
-
-
-          <label for="consumidor-habitual" id="label-consumidor-habitual">¿Sos consumidor habitual de nuestros
-            productos?</label>
-          <div id="input-consumidor-habitual">
-            <span>Sí</span><input type="radio" name="consumidor" /> <span>No</span><input type="radio"
-              name="consumidor" />
-
-
-
+              <label for="promociones" id="label-recibir-notificaciones">Marca el casillero si deseas recibir
+                promociones vía e-mail </label>
+              <input type="checkbox" id="check-recibir-notificaciones" />
+            
           </div>
-
-          <div id="recibir-notificaciones">
-            <input type="checkbox" />
-            <label for="promociones">¿Deseas recibir promociones en tu casilla de e-mail?</label></div>
-
-
         </fieldset>
 
-
-
-
-        <fieldset id="contact-form-mensaje">
+        <!-- Mensajes -->
+        <fieldset>
           <legend>Tu mensaje</legend>
-          <label for="nombre" id="label-mensaje">Escribe aquí tu sugerencia o consulta:</label>
-          <textarea name="consulta" id="input-mensaje" cols="60" rows="10"></textarea>
-
-
-
+          <div id="contact-form-mensaje">
+            <label for="nombre" id="label-mensaje">Escribe aquí tu sugerencia o consulta:</label>
+            <textarea name="consulta" id="input-mensaje" cols="60" rows="10"></textarea>
+          </div>
         </fieldset>
 
-
+        <!-- Acciones -->
         <div id="contact-form-button-bar">
           <input type="reset" name="Limpiar formulario" class="button" />
           <input type="submit" class="button" />

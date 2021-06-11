@@ -29,22 +29,20 @@ article {
 
 aside {
   grid-area: aside;
- // align-content: initial;
   text-align: center;
   padding: 0px 20px 0px 20px;
 }
 
 
-
 body {
-  background-color: #e2d5d5;
   background-image: url("../img/pecan-bbbbbb.svg");
   background-position-y: bottom;
   background-repeat: repeat-x;
   background-size: 5%;
+  background-color: #e2d5d5;
   font-family: 'Baloo 2', sans-serif;
-  padding-bottom: 5%;
-  padding: 15px 15px 50px 15px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 fieldset {
@@ -56,7 +54,6 @@ footer {
   text-align: center;
   padding-top: 20px;
 }
-
 
 form {
   display: grid;
@@ -81,6 +78,7 @@ input {
 
 main {
   grid-area: main;
+  justify-self: center;
 }
 
 nav li {
@@ -93,7 +91,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  justify-content: center;  
+  justify-content: center;
 }
 
 nav ul li:hover {
@@ -107,7 +105,6 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
-
 }
 
 select {
@@ -135,7 +132,6 @@ th {
 }
 
 
-
 /******************* CLASS STYLES *******************/
 .button {
   background-color: #865858;
@@ -145,6 +141,11 @@ th {
 
 .button:hover {
   color: #bbbbbb;
+}
+
+.go-home {
+  margin: 0;
+  padding: 0;
 }
 
 .price {
@@ -162,8 +163,10 @@ th {
 }
 
 .product-128 {
-  height: 128px; width: 128px;
+  height: 128px;
+  width: 128px;
 }
+
 .product-name {
   font-weight: 600;
   font-size: 120%;
@@ -176,9 +179,7 @@ th {
 #banner {
   grid-area: banner;
   justify-content: space-evenly;
-//  background-image: linear-gradient(#865858,#e2d5d5);
-background: rgb(134,88,88);
-background: linear-gradient(180deg, rgba(134,88,88,1) 0%, rgba(226,213,213,1) 100%);
+  background: linear-gradient(180deg, rgba(134, 88, 88, 1) 0%, rgba(226, 213, 213, 1) 100%);
 }
 
 #banner-image {
@@ -189,16 +190,16 @@ background: linear-gradient(180deg, rgba(134,88,88,1) 0%, rgba(226,213,213,1) 10
   font-family: 'Lobster', cursive;
   font-size: xxx-large;
   align-self: center;
-  padding-right: 5%;;
+  padding-right: 5%;
 }
 
 #grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-areas:  "banner banner"
-                        "menu menu"
-                        "aside main"
-                        "footer footer";
+  grid-template-areas: "banner banner"
+    "menu menu"
+    "aside main"
+    "footer footer";
   row-gap: 10px;
   column-gap: 10px;
 }
@@ -206,39 +207,41 @@ background: linear-gradient(180deg, rgba(134,88,88,1) 0%, rgba(226,213,213,1) 10
 #grid-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "banner" "menu" "main" "footer";
+  grid-template-areas: "banner""menu""main""footer";
   row-gap: 10px;
   column-gap: 10px;
 }
+
 #menu {
   grid-area: menu;
   height: 100px;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 #logo {
   display: flex;
-  justify-content: space-between ;
-
+  justify-content: space-between;
 }
 
 
 /******************* CONTACT FORM *******************/
-
 form {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
 }
 
 #contact-form-datos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "labelNombre inputNombre"
-    "labelEmail inputEmail"
-    "labelResidencia inputResidencia"
-    "labelConsumidorHabitual inputConsumidorHabitual"
-    "recibirNotificaciones recibirNotificaciones";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "labelNombre inputNombre inputNombre"
+    "labelEmail inputEmail inputEmail"
+    "labelResidencia inputResidencia inputResidencia"
+    "labelConsumidorHabitual labelConsumidorHabitual inputConsumidorHabitual"
+    "labelNotificaciones labelNotificaciones checkNotificaciones";
+  column-gap: 50px;
 }
 
 #label-nombre {
@@ -273,15 +276,25 @@ form {
   grid-area: inputConsumidorHabitual;
 }
 
-#recibir-notificaciones {
+#aaarecibir-notificaciones {
   grid-area: recibirNotificaciones;
 }
 
+#label-recibir-notificaciones {
+  grid-area: labelNotificaciones;
+}
+
+#check-recibir-notificaciones {
+  grid-area: checkNotificaciones;
+}
 
 #contact-form-mensaje {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "labelMensaje""inputMensaje";
+  row-gap: 10px;
+  column-gap: 10px;
+  align-items: flex-start;
 }
 
 #label-mensaje {
@@ -297,4 +310,45 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+
+/******************* RECETAS *******************/
+
+#detalle-receta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "nombre         nombre          nombre"
+    "fuente         fuente          fuente"
+    "image          tiempo          porciones"
+    "ingredientes   preparacion     preparacion"
+
+}
+
+#receta-nombre {
+  grid-area: nombre;
+}
+
+#receta-label-fuente {
+  grid-area: fuente;
+}
+
+#receta-imagen {
+  grid-area: image;
+}
+
+#receta-label-tiempo {
+  grid-area: tiempo;
+}
+
+#receta-label-porciones {
+  grid-area: porciones;
+}
+
+#receta-ingredientes {
+  grid-area: ingredientes;
+}
+
+#receta-preparacion {
+  grid-area: preparacion;
 }
