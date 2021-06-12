@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: #bbbbbb;
+  color: #865858;
 }
 
 article {
@@ -96,9 +96,14 @@ nav ul {
 }
 
 nav ul li:hover {
-  background-color: #8e7f7f;
-  color: #bbbbbb;
+  background-color: blac;
+  color: black;
+  transition: width 1s;
+  background-image: linear-gradient(to bottom, #8e7f7f, #bbbbbb);
+  transition: all 200ms;
+  transform: skew(-10deg, 0deg);
 }
+
 
 section {
   text-align: center;
@@ -188,7 +193,7 @@ th {
 }
 
 #campos-pecan {
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: xxx-large;
   align-self: center;
   padding-right: 5%;
